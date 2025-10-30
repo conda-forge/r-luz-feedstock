@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/luz_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/luz/luz_{{ version }}.tar.gz
-  sha256: f4d7fde0899a2aebbdfb1ccf7649a336476d3146405af5570a34fa518966f729
+  sha256: b2f8c96712e9a548ee1cc95baad4ac77795e47d9809332b4eb46cbae6b225fea
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
