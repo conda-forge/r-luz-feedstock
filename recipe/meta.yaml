@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/luz_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/luz/luz_{{ version }}.tar.gz
-  sha256: b2f8c96712e9a548ee1cc95baad4ac77795e47d9809332b4eb46cbae6b225fea
+  sha256: cc4d942663e03a477a81a2ad5d0d29e8fa6b35d8f0002207bfebf3a4c1587047
 
 build:
   number: 0
@@ -65,8 +65,8 @@ test:
 about:
   home: https://mlverse.github.io/luz/, https://github.com/mlverse/luz
   license: MIT
-  summary: A high level interface for 'torch' providing utilities to reduce the the amount of code needed for common tasks, abstract away torch details and make the same code work on both the 'CPU' and 'GPU'. It's flexible enough to support expressing a large range of models. It's heavily inspired by 'fastai' by Howard et
-    al. (2020) <arXiv:2002.04688>, 'Keras' by Chollet et al. (2015) and 'PyTorch Lightning' by Falcon et al. (2019) <doi:10.5281/zenodo.3828935>.
+  summary: A high level interface for 'torch' providing utilities to reduce the the amount of code needed for common tasks, abstract away torch details and make the same code work on both the 'CPU' and 'GPU'. It's flexible enough to support expressing a large range of models. It's heavily inspired by 'fastai' by Howard
+    et al. (2020) <arXiv:2002.04688>, 'Keras' by Chollet et al. (2015) and 'PyTorch Lightning' by Falcon et al. (2019) <doi:10.5281/zenodo.3828935>.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
